@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sklep u Sipy</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./styles/p.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="nav_mobile">
+        <img src="nav.png" alt="nawigacja">
+    </div>
+    <article id='first'>
+        <h6>First page</h6>
+        <section id="dekstop">
+            <h6> desktop</h6>
+            <img src="desktop.svg" alt=" bakcground">
+        </section>
+        <section id="mobile">
+            <h6>mobile</h6>
+            <img src="./styles/mobile.svg" alt=" mobile bakcground">
+        </section>
+        <section id="logo">
+            <h6>logo</h6>
+            <img src="logo.png " alt=" ">
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="#first">Strona główna </a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#second">Stwórz zestaw </a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#third">Kontakt </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+            <p>Sklep internetowy by SIPA</p>
+            <p>Życzymy przyjemnych zakupów</p>
+
+
+        </section>
+    </article>
+    <article id="second">
+        <h6>sec</h6>
+        <section>
+            <h1>Stwórz swój zestaw!</h1> <br>
+
+            <form>
+                <fieldset>
+                    <legend> Personalizuj sprzęt</legend>
+                    <label>Producent:  </label><br> <label> <input type="radio" name="amd" id="cpu_amd">AMD</label>
+                    <label> <input type="radio" name="amd" id="cpu_intel"> Intel</label> <br> <br>
+                    <div id="intel">
+                        <label>Procesor Intel:  <select name="cpuIntel" id="next_cpu_intel">
+                            <option value="" hidden>Procesory</option>
+                             <option value="0"  >Intel Pentium - 400 PLN</option>
+                             <option value="1"  >Intel Core i3 - 500 PLN</option>
+                             <option value="2"  >Intel Core i5 - 600 PLN</option>
+                             <option value="3"  >Intel Core i7 - 900 PLN</option>
+                             <option value="4"  >Intel Core i9 - 1000 PLN</option>
+                            </select></label>
+                        <br> <br>
+                    </div>
+                    <div id="amd">
+                        <label>Procesor AMD:  <select name="cpuAmd" id="next_cpu_amd">
+                            <option value="" hidden>Procesory</option>
+                            <option value="0">AMD Ryzen 3 - 300 PLN</option>
+                            <option value="1">AMD Ryzen 5 - 500 PLN</option>
+                            <option value="2">AMD Ryzen 9 - 1000 PLN</option>
+                        </select></label>
+                        <br> <br>
+                    </div>
+
+                    <label>Płyta główna:
+                        <select name="mother" id="mother">
+                            <option value="" hidden>Płyta Główna</option>
+                            <option value="0">Firmy A; 4 sloty RAM; obsługa dysków m.2  - 500 PLN</option>
+                            <option value="1">Firmy B; 6 slotów RAM; obsługa portu USB C - 700 PLN</option>
+                            <option value="2">Firmy C; 8 slotów RAM; dwa gniazda CPU - 1000 PLN</option>
+                        </select>
+                    </label>
+
+                    <br> <br>
+                    <label>Pamięć RAM:
+                        <select name="ram" id="ram">
+                            <option value="" hidden>RAM</option>
+                            <option value="0">4 GB - 200 PLN</option>
+                            <option value="1">8 GB - 400 PLN</option>
+                            <option value="2">16GB - 800 PLN</option>
+                        </select>
+                    </label>
+
+                    <br> <br>
+                    <label>Dysk twardy:
+                        <select name="hdd" id="hdd">
+                            <option value="" hidden>HDD</option>
+                            <option value="0">256 GB - 80 PLN</option>
+                            <option value="1">1 TB - 200 PLN</option>
+                            <option value="2">2 TB - 250 PLN</option>
+                        </select>
+                    </label>
+
+                    <br>
+                    <label>Dysk SSD:</label> <br>
+                    <label> <input type="radio" name="ssd" id="ssd_yes" value="0">TAK - 300 PLN</label> <label> <input type="radio" name="ssd" id="ssd_no" value="0">NIE</label><br>
+                    <label>Dodatkowe wyposażenie:</label> <br>
+
+
+                    <label><input type="checkbox" name="monitor" id="monitor">Monitor - 600 PLN</label>
+
+
+                    <label>  <input type="checkbox" name="myszka" id="myszka">Myszka - 60 PLN</label>
+
+
+                    <label> <input type="checkbox" name="klawiatura" id="klawiatura">Klawiatura - 50 PLN</label>
+
+
+                    <label>  <input type="checkbox" name="system" id="system">System Windows 10 - 500 PLN</label><br> <br>
+                    <label>Kolor ledów:   <input type="color" name="led" id="colors"></label>
+                    <br> <br>
+                    <label>Data dostawy: <input type="date" name="dostawa" id="delivery"></label>
+                    <br> <br>
+                    <label>Komentarz:  <textarea name="kom" id="comments" cols="30" rows="1"></textarea> </label>
+                    <br>
+                    <a href="#zestaw" id="submit" onclick="konfiguracja()">Wyślij </a> <br> <br>
+                    <a href="index.html" id="reset"> reset</a>
+                </fieldset>
+
+            </form>
+        </section>
+        <section id='zestaw'>
+            <br><br><br><br>
+            <fieldset id="f2">
+
+                <h2>Twoja konfiguracja:</h2>
+                <div class="xd">
+                    <p id="p_cpu">Procesor:</p>
+                    <p id="p_mother"> Płyta główna:</p>
+                    <p id="p_ram">RAM:</p>
+                    <p id="p_hdd">HDD:</p>
+                    <p id="p_ssd">SSD:</p>
+                    <p id="p_external">Dodatkowe wyposażenie:</p>
+                    <p id="p_colors">Kolor ledów:</p>
+                    <p id="p_data">Data dostawy:</p>
+                    <p id="p_comments">Komentarz:</p>
+                    <p id="p_price">Cena sumaryczna:</p>
+                </div>
+
+            </fieldset>
+        </section>
+    </article>
+    <article id="third">
+        <h1>Skontaktuj się z nami!</h1>
+        <section>
+            <h6>Kontakt</h6>
+            <form>
+                <fieldset>
+                    <legend>Kontakt</legend>
+                    <label>Imię: <input type="text" name="imie"  required> </label> <br>
+                    <label>Nazwisko: <input type="text" name="nazwisko"  required></label> <br>
+                    <label>Mail: <input type="email" name="mail"  required></label> <br>
+                    <label>Zapytanie: <textarea  cols="30" rows="4"></textarea></label> <br>
+                    <button type="submit">Wyślij</button>
+                </fieldset>
+
+            </form>
+        </section>
+        <footer>Created By Przemysław Sipa 2020 All rights reserved &copy; </footer>
+    </article>
+
+    <script src="script.js "></script>
+</body>
+
+</html>

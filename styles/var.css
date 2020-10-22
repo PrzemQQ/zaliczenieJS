@@ -1,0 +1,101 @@
+@-webkit-keyframes imycz {
+  0% {
+    width: 8%;
+  }
+  25% {
+    width: 8.5%;
+  }
+  50% {
+    width: 9%;
+  }
+  75% {
+    width: 8.5%;
+  }
+  100% {
+    width: 8%;
+  }
+}
+
+@keyframes imycz {
+  0% {
+    width: 8%;
+  }
+  25% {
+    width: 8.5%;
+  }
+  50% {
+    width: 9%;
+  }
+  75% {
+    width: 8.5%;
+  }
+  100% {
+    width: 8%;
+  }
+}
+
+#zestaw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  height: 100vh;
+  color: white;
+}
+
+#zestaw h2 {
+  font-size: 2.5em;
+  font-family: "Alfa Slab One", cursive, "Oswald", fantasy;
+  letter-spacing: 5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#zestaw p {
+  font-size: 1em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0;
+  border-spacing: 0px;
+  word-spacing: 0px;
+  -webkit-text-decoration: double overline;
+          text-decoration: double overline;
+  -webkit-text-decoration-color: lightgreen;
+          text-decoration-color: lightgreen;
+}
+
+#zestaw fieldset {
+  width: 50%;
+  height: 70vh;
+  border: 10px solid white;
+  font-family: 'Fira Sans Extra Condensed';
+}
+
+legend {
+  font-family: 'Fira Sans Extra Condensed';
+}
+/*# sourceMappingURL=var.css.map */
